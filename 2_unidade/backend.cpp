@@ -73,6 +73,7 @@ int main()
     cout << "Digite 4 para filtrar pelo nome\n";
     cout << "Digite 5 para alocar um programa ao CPU definida\n";
     cout << "Digite 6 para mudar prioridade do processo\n";
+    cout << "Digite qualquer tecla para sair\n";
     cout << "==================================\n";
     cin >> options;
     switch (options)
@@ -115,9 +116,6 @@ int main()
     
     default:
       exit(0); 
-      break;
-    }
-    if (options == 0){
       break;
     }
   }
