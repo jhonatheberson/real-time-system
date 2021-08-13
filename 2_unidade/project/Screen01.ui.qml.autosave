@@ -1,0 +1,24 @@
+import QtQuick 2.15
+import QtQuick.Controls 2.15
+import project 1.0
+
+Rectangle {
+    width: Constants.width
+    height: Constants.height
+
+    color: Constants.backgroundColor
+    property alias switch1: switch1
+
+    Text {
+        text: qsTr("Hello project")
+        anchors.centerIn: parent
+        font.family: Constants.font.family
+    }
+    
+    Switch {
+        id: switch1
+        x: 454
+        y: 263
+        text: qsTr("Switch")
+    }
+}
