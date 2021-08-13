@@ -38,4 +38,8 @@ ListModel {
         shortcut: "Return"
         parameters: "Enter"
     }
+
+    ListElement {
+        eventId: "boyon0"
+    }
 }
