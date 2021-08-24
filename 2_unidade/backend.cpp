@@ -47,6 +47,8 @@ void function_filter(string filter){
 void function_aloc_cpu(int cpu,int pid){
   CPU_ZERO(&mask);
   CPU_SET(cpu-1, &mask);    // alocar na CPU 0
+  CPU_SET(cpu+1, &mask);    // alocar na CPU 0
+  CPU_SET(cpu, &mask);    // alocar na CPU 0
   int result = sched_setaffinity(pid, sizeof(mask), &mask);  // 0 --> Aqui é no próprio processo. No Geral deve ser o PID
   cout << "\nprocesso com o PID: " << pid << ",foi alocado na seguinte cpu: " << cpu << "\n\n";
 };
